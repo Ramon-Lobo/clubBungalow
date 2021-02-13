@@ -1,3 +1,37 @@
 module.exports = {
-  presets: ['module:metro-react-native-babel-preset'],
+  presets: [
+    ['@babel/preset-env', { targets: { node: 'current' } }],
+    '@babel/preset-typescript',
+    'module:metro-react-native-babel-preset',
+  ],
+  plugins: [
+    '@babel/transform-flow-strip-types',
+    '@babel/proposal-class-properties',
+    [
+      'module-resolver',
+      {
+        root: ['./src'],
+        extensions: ['.ios.js', '.android.js', '.js', '.ts', '.tsx', '.json'],
+        alias: {
+          //  "~/": "./src/",
+          '~/assets': './src/assets',
+          '~/theme': './src/theme',
+          '~/components': './src/components',
+          '~/pages': './src/pages',
+          '~/routes': './src/routes',
+          '~/services': './src/services',
+          '~/i18n': './src/i18n',
+          '~/mocks': './src/mocks',
+          '~/utils': './src/utils',
+          '~/configs': './src/configs',
+          '~/http': './src/services/http',
+          '~/storage': './src/store/storage',
+          '~/store': './src/store',
+          '~/constants': './src/store/store/constants',
+          '~/actions': './src/store/store/actions',
+          '~/reducers': './src/store/reducers',
+        },
+      },
+    ],
+  ],
 };

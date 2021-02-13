@@ -1,0 +1,96 @@
+import { ThemeType } from '~/theme';
+
+export const Colors: { theme: ThemeType } = {
+  theme: {
+    input: {
+      label: '#FFFFFF4D',
+      background: 'transparent',
+      text: { default: '#FFFFFF', valid: '#00C389', invalid: '#FF0000' },
+      border: {
+        empty: '#FFFFFF4D',
+        typing: '#FFFFFF80',
+        complete: '#0BC08B80',
+        error: '#FF0000',
+      },
+      placeholder: '#FFFFFF99',
+      icon: { default: '#DFE1DF', valid: '#0BC08B' },
+    },
+    button: {
+      background: {
+        primary: { active: '#f1b63f', disabled: '#FFFFFF4D' },
+        primaryOutlined: { active: 'transparent', disabled: '#FFFFFF4D' },
+        secondary: { active: '#FF4700', disabled: '#FFFFFF4D' },
+        secondaryOutlined: { active: 'transparent', disabled: '#FFFFFF4D' },
+        tertiary: { active: '#93A0B0', disabled: '#FFFFFF4D' },
+        tertiaryOutlined: { active: 'transparent', disabled: '#FFFFFF4D' },
+        facebook: { active: '#244d99', disabled: '#FFFFFF4D' },
+        google: { active: '#FFFFFF', disabled: '#FFFFFF4D' },
+        cancelable: { active: 'transparent', disabled: '#FFFFFF4D' },
+        text: { active: 'transparent', disabled: '#FFFFFF4D' },
+      },
+      title: {
+        primary: { active: '#252525', disabled: '#FFFFFF4D' },
+        primaryOutlined: { active: '#FFFFFF', disabled: '#FFFFFF4D' },
+        secondary: { active: '#FFFFFF', disabled: '#FFFFFF4D' },
+        secondaryOutlined: { active: '#FFFFFF', disabled: '#FFFFFF4D' },
+        tertiary: { active: '#FFFFFF', disabled: '#FFFFFF4D' },
+        tertiaryOutlined: { active: '#FFFFFF', disabled: '#FFFFFF4D' },
+        facebook: { active: '#FFFFFF', disabled: '#FFFFFF4D' },
+        google: { active: '#828282', disabled: '#FFFFFF4D' },
+        cancelable: { active: '#FF4700', disabled: '#FFFFFF4D' },
+        text: { active: '#FF4700', disabled: '#FFFFFF4D' },
+      },
+      border: {
+        primary: { active: 'transparent', disabled: 'transparent' },
+        primaryOutlined: { active: '#f1b63f', disabled: '#FFFFFF4D' },
+        secondary: { active: '#FF4700', disabled: 'transparent' },
+        secondaryOutlined: { active: ' #FFFFFF', disabled: '#FFFFFF4D' },
+        tertiary: { active: '#93A0B0', disabled: 'transparent' },
+        tertiaryOutlined: { active: 'transparent', disabled: '#FFFFFF4D' },
+        facebook: { active: 'transparent', disabled: '#FFFFFF4D' },
+        google: { active: 'transparent', disabled: '#FFFFFF4D' },
+        cancelable: { active: '#FF4700', disabled: '#FFFFFF4D' },
+        text: { active: 'rgba(0, 0, 0, 0)', disabled: 'rgba(0, 0, 0, 0)' },
+      },
+    },
+    primary: {
+      yellow: '#FFEA5A',
+      orange: '#f1b63f',
+      red: '#F15A53',
+      splash: '#FFD842',
+    },
+    alerts: {
+      green: '#40B36B',
+      red: '#FF4700',
+      yellow: '#F2C94C',
+    },
+    monochromatic: {
+      black: '#252525',
+      darkGrey: '#4F4F4F',
+      midGrey: '#93A0B0',
+      altGrey: '#B5C0CE',
+      lightGrey: '#F1F3F5',
+      almostWhite: '#FDFDFD',
+      white: '#FFF',
+    },
+    transparent: 'transparent',
+    barStyle: 'dark-content',
+    background: {
+      light: {
+        primary: '#FFFFFF',
+        secondary: '#EFEFF4',
+        tertiary: '#FFFFFF',
+      },
+      base: {
+        primary: '#000000',
+        secondary: '#1C1C1E',
+        tertiary: '#2C2C2E',
+      },
+      elevated: {
+        primary: '#1C1C1E',
+        secondary: '#2C2C2E',
+        tertiary: '#3A3A3C',
+      },
+    },
+  },
+};
